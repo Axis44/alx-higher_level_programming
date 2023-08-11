@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"" to print argument list with numnberX""
+#Prints the number of arguments lists
 if __name__ == "__main__":
     import sys
 
-      arg = sys.argv
+    arg = sys.argv
     size = len(arg) - 1
 
     if size > 1:
