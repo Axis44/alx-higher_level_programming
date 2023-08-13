@@ -1,0 +1,36 @@
+#ifndef LISTS_H
+#define LISTS_H
+#include <stdlib.h>
+#include <stdio.h>
+
+/**
+ * struct listint_s - list singly linked
+ * @n: integer
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ */
+typedef struct listint_s
+{
+	int n;
+	struct listint_s *next;
+} listint_t;
+
+def delete_at(my_list=[], idx=0);
+def divisible_by_2(my_list=[]);
+def max_integer(my_list=[]);
+size_t print_listint(const listint_t *h);
+listint_t *add_nodeint_end(listint_t **head, const int n);
+void free_listint(listint_t *head);
+int is_palindrome(listint_t **head);
+def multiple_returns(sentence);
+def add_tuple(tuple_a=(), tuple_b=());
+def print_matrix_integer(matrix=[[]]);
+def no_c(my_string);
+def new_in_list(my_list, idx, element);
+def print_reversed_list_integer(my_list=[]);
+def replace_in_list(my_list, idx, element);
+def element_at(my_list, idx);
+def print_list_integer(my_list=[]);
+
+#endif /* LISTS_H */
