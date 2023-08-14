@@ -31,6 +31,7 @@ def new_in_list(my_list, idx, element);
 def print_reversed_list_integer(my_list=[]);
 def replace_in_list(my_list, idx, element);
 def element_at(my_list, idx);
+void print_python_list_info(PyObject *p);
 def print_list_integer(my_list=[]);
 
 #endif /* LISTS_H */
