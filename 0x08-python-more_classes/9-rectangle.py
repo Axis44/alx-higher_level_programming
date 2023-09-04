@@ -9,7 +9,6 @@ class Rectangle:
     # Public class attribute
     print_symbol = '#'
 
-
     def __init__(self, width=0, height=0):
         """ initialize a class """
         self.width = width
