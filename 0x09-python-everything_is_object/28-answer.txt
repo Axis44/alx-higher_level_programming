@@ -1,5 +1,1 @@
-#!/usr/bin/python3
-# last line print 139926795932424
-
-
 Yes

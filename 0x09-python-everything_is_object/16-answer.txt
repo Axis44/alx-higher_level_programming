@@ -1,5 +1,1 @@
-#!/usr/bin/python3
-# increment(a), a = 1
-
-
 1
