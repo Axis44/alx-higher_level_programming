@@ -3,10 +3,10 @@
 #include <Python.h>
 
 /**
- * print_python_string - Function that prints strings in Python
+ * print_python_string - strings to print in Python
  * @p: Pointer to python object.
  *
- * Return: No return.
+ * Return: No return, success
  */
 void print_python_string(PyObject *p)
 {

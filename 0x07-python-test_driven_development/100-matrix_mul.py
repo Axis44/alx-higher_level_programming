@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines a function that multiplies all elements of a matrix.
+"""Defines th function that multiplies all elements of a matrix.
 
 Attributes:
     m_a (matrix)
@@ -8,7 +8,7 @@ Attributes:
 
 
 def matrix_mul(m_a, m_b):
-    """Multiplies two matrices.
+    """Multiplies of matrices.
 
     Args:
         m_a (matrix): first matrix.
