@@ -24,8 +24,8 @@ Passing an empty string as text.
     >>> text_indentation("")
 
 Passing a text with space at the beginning.
-    >>> text_indentation("        Hello Breezy")
-    Hello Breezy
+    >>> text_indentation("        Hello Axis")
+    Hello Axis
 
 Printing a word with spaces around it.
     >>> text_indentation("    Villegas    ")

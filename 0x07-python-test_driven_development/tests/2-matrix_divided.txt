@@ -1,9 +1,6 @@
-# The ``2-matrix_divided`` module
-============================================
-How to use 2-matrix_divided.py
-============================================
-
-This library has one function called ``matrix_divided()``
+# The ``2-matrix_divided.py``
+>>
+ ``matrix_divided()``
 
 ``matrix_divided()`` returns a new matrix after a given matrix has been
 divided by a number ``div``:

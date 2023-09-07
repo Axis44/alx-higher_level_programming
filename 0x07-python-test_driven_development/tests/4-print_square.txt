@@ -1,9 +1,6 @@
 # The ``4-print_square`` module
-============================================
-How to use 4-print_square.py
-============================================
-
-This library has one function called ``print_square()``
+>>
+ ``print_square()``
 
 ``print_square()`` prints a square with the character #.
 
