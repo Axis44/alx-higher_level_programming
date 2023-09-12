@@ -1,6 +1,15 @@
 #!/usr/bin/python3
-def write_file(filename="", text=""):
-    """ writes the string to a text file (UTF8)  """
+"""
+json string
+"""
+import json
 
-    with open(filename, "w", encoding='utf-8') as f:
-        return f.write(text)
+
+def to_json_string(my_obj):
+    """
+    to_json_string - return JSON representation of an object/string
+    Args:
+        my_obj: string to represent
+    Return: json representation
+    """
+    return json.dumps(my_obj)

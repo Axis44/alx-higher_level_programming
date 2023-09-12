@@ -1,6 +1,15 @@
 #!/usr/bin/python3
-def append_write(filename="", text=""):
-    " to appends a string returns the number of characters """
+"""
+json string
+"""
+import json
 
-    with open(filename, "a", encoding='utf-8') as f:
-        return f.write(text)
+
+def from_json_string(my_str):
+    """
+    from_json_string - returns an object
+    Args:
+        my_str: json string to represent
+    Return: the object
+    """
+    return json.loads(my_str)
