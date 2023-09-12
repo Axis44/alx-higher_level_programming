@@ -1,24 +1,18 @@
 #!/usr/bin/python3
 """
-Student
-Class
+pascal triangle method.
 """
 
 
-class Student:
-
-    def __init__(self, first_name, last_name, age):
-        """Constructor"""
-        self.first_name = first_name
-        self.last_name = last_name
-        self.age = age
-
-    def to_json(self, attrs=None):
-        """
-        Public method Retrieves a dictionary representation of a
-        Student instance
-        """
-        if (isinstance(attrs, list) and
-                all(isinstance(x, str) for x in attrs)):
-            return {x: getattr(self, x) for x in attrs if hasattr(self, x)}
-        return self.__dict__
+def pascal_triangle(n):
+    """
+    returns the listof integers
+        Args:
+            n (int): number of lists and digits
+        Returns: list of lists
+    """
+    rows = [[1 for j in range(i + 1)] for i in range(n)]
+    for n in range(n):
+        for i in range(n - 1):
+            rows[n][i + 1] = sum(rows[n - 1][i:i + 2])
+    return rows

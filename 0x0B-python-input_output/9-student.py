@@ -1,16 +1,30 @@
 #!/usr/bin/python3
-import sys
-import json
+"""
+Student class
+"""
 
-save_to_json_file = __import__('7-save_to_json_file').save_to_json_file
-load_from_json_file = __import__('8-load_from_json_file').load_from_json_file
 
-if __name__ == "__main__":
-    try:
-        json_list = load_from_json_file('add_item.json')
-    except FileNotFoundError:
-        json_list = []
+class Student:
+    """
+        A class students that defines a student by:
+        Attributes:
+            first_name (str): name of student.
+            last_name (str): name of student.
+            age (int): age of student.
+        Methods:
+            __init__ - initializes the Student instance.
+            to_json - retrieves dictionary repr of Student instance.
+    """
+    def __init__(self, first_name, last_name, age):
+        """
+            Initialises Student object
+        """
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
 
-    for i in range(1, len(sys.argv)):
-        json_list.append(sys.argv[i])
-    save_to_json_file(json_list, "add_item.json")
+    def to_json(self):
+        """
+            retrieves a dictionary rep of Student.
+        """
+        return self.__dict__
